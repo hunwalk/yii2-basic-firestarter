@@ -13,7 +13,7 @@ Please leave a star if you're considering to use this template in production.
 
 Contains:
 
- - dotenv configuration
+ - dotenv configuration ( idea by [@lostika86](https://github.com/lostika86) )
  - The dektrium/yii2-user and dektrium/yii2-rbac packages with basic config
  - An api identifier solution (Authorization header => Bearer token)
  - An api module
