@@ -20,11 +20,10 @@ Contains:
  - Predefined controllerMap to the console config (added migration commands)
  
  ## Check out the packages
- https://github.com/dektrium/yii2-user / User management
- https://github.com/dektrium/yii2-rbac / Powerful RBAC manager
- https://github.com/bizley/timeclock / The idea of the api key came from here. (and the code as well)
- 
- https://github.com/symfony/dotenv / The dotenv we're using
+ - https://github.com/dektrium/yii2-user / User management
+ - https://github.com/dektrium/yii2-rbac / Powerful RBAC manager
+ - https://github.com/bizley/timeclock / The idea of the api key came from here. (and the code as well)
+ - https://github.com/symfony/dotenv / The dotenv we're using
  
  ## Get started
  
