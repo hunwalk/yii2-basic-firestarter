@@ -21,9 +21,9 @@ class User extends BaseUser
         }
         [$userId, $stamp, $checksum] = $matches;
         $now = time();
-//        if ($now > $stamp + 60 || $now < $stamp - 60) {
-//            throw new ForbiddenHttpException('Invalid token provided | Bad Timestamp');
-//        }
+        if ($now > $stamp + 60 || $now < $stamp - 60) {
+            throw new ForbiddenHttpException('Invalid token provided | Bad Timestamp');
+        }
         $user = static::findIdentity($userId);
         if ($user === null || empty($user->api_key) || !$user->verifyChecksum($stamp, $checksum)) {
             throw new ForbiddenHttpException('Invalid token provided');
