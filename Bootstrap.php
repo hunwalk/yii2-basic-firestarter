@@ -20,8 +20,6 @@ class Bootstrap implements BootstrapInterface{
             RegistrationController::className(),
             RegistrationController::EVENT_AFTER_REGISTER,
             function ($event) {
-                var_dump($event);
-                exit;
                 // implement role assignment(s)
             }
         );
