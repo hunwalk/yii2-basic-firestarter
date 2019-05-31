@@ -11,6 +11,9 @@ defined('YII_ENV') or define('YII_ENV', 'test');
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
 
+$dotenv = new Symfony\Component\Dotenv\Dotenv;
+$dotenv->load(__DIR__.'/../.env.test');
+
 $config = require __DIR__ . '/../config/test.php';
 
 (new yii\web\Application($config))->run();
