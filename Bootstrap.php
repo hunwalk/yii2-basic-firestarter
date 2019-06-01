@@ -18,6 +18,15 @@ class Bootstrap implements BootstrapInterface{
     {
         Event::on(
             RegistrationController::className(),
+            RegistrationController::EVENT_BEFORE_REGISTER,
+            function ($event) {
+                // generating api key
+
+            }
+        );
+
+        Event::on(
+            RegistrationController::className(),
             RegistrationController::EVENT_AFTER_REGISTER,
             function ($event) {
                 // implement role assignment(s)
