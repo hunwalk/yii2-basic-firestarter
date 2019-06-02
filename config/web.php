@@ -19,6 +19,7 @@ $config = [
             'class' => 'dektrium\user\Module',
             'modelMap' => [
                 'User' => 'app\models\User',
+                'RegistrationForm' => 'app\models\user\RegistrationForm',
             ],
         ],
         'rbac' => 'dektrium\rbac\RbacWebModule',

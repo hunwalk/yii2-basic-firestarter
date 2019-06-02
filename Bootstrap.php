@@ -2,13 +2,14 @@
 
 namespace app;
 
+use dektrium\user\controllers\RegistrationController;
 use dektrium\user\events\FormEvent;
 use yii\base\Application;
 use yii\base\BootstrapInterface;
-use dektrium\user\controllers\RegistrationController;
 use yii\base\Event;
 
-class Bootstrap implements BootstrapInterface{
+class Bootstrap implements BootstrapInterface
+{
 
     /**
      * Bootstrap method to be called during application bootstrap stage.
@@ -19,9 +20,11 @@ class Bootstrap implements BootstrapInterface{
         Event::on(
             RegistrationController::className(),
             RegistrationController::EVENT_BEFORE_REGISTER,
-            function ($event) {
+            function (FormEvent $event) use ($app) {
                 // generating api key
-
+                $form = $event->getForm();
+                $form->api_key = $app->security->generateRandomString(16);
+                $event->setForm($form);
             }
         );
 
