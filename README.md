@@ -26,6 +26,11 @@ Contains:
  - https://github.com/symfony/dotenv / The dotenv we're using
  
  ## Get started
+ Use the latest release
+```bash
+$ composer create-project hunwalk/yii2-basic-firestarter test --prefer-dist
+```
+Or use the current master branch, if you're in a hurry for features if there is  any
  
 ```
 $ git clone https://github.com/HunWalk/yii2-basic-firestarter <projectName>
@@ -56,7 +61,7 @@ Windows
     ```
     $ php yii migrate-user
     $ php yii migrate-rbac
-    $ php yii migrate-app
+    $ php yii migrate
     ```
 ### 3rd step
 
@@ -68,7 +73,8 @@ Windows
 ## Todo
 - [x] Correct testing 
 - [ ] Mention every 3rd party package here
-- [ ] Test the API key functionality
+- [x] Test the API key functionality (tested, now it should work)
+- [ ] Make a v1 api module with contentNegotiation HttpBearerAuth and verbFilter by default
 
 ## Sites or projects ignited by this
 Send a PR if you have one :)
