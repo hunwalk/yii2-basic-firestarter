@@ -28,7 +28,7 @@ Contains:
  ## Get started
  Use the latest release
 ```bash
-$ composer create-project hunwalk/yii2-basic-firestarter test --prefer-dist
+$ composer create-project hunwalk/yii2-basic-firestarter <projectName> --prefer-dist
 ```
 Or use the current master branch, if you're in a hurry for features if there is  any
  
