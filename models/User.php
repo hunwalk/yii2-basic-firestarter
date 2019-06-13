@@ -19,7 +19,7 @@ class User extends BaseUser
         if (!preg_match('/^(\d+):(\d+):(.+)$/', $token, $matches)) {
             throw new ForbiddenHttpException('Invalid token provided');
         }
-        [$userId, $stamp, $checksum] = $matches;
+        [, $userId, $stamp, $checksum] = $matches;
         $now = time();
         if ($now > $stamp + 60 || $now < $stamp - 60) {
             throw new ForbiddenHttpException('Invalid token provided | Bad Timestamp');
