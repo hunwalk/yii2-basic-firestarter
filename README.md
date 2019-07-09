@@ -18,12 +18,14 @@ Contains:
  - An api identifier solution (Authorization header => Bearer token)
  - An api module
  - Predefined controllerMap to the console config (added migration commands)
+ - A conventional commits helper
  
  ## Check out the packages
  - https://github.com/dektrium/yii2-user / User management
  - https://github.com/dektrium/yii2-rbac / Powerful RBAC manager
  - https://github.com/bizley/timeclock / The idea of the api key came from here. (and the code as well)
  - https://github.com/symfony/dotenv / The dotenv we're using
+ - https://github.com/damianopetrungaro/php-commitizen / A tool for conventional commits
  
  ## Get started
  Use the latest release
@@ -69,7 +71,18 @@ Windows
     ```
     $ php yii serve
     ```
-    
+## Use Conventional Commits
+
+Thanks to the conventional commits project and this guy: https://github.com/damianopetrungaro/
+
+Now with: 
+
+```bash
+$ php yii fire/commit
+```
+ you can start the commitizen which helps you to make beautiful commits.
+ You can find the configuration file at <b><i>config/commitizen.php</i></b>
+
 ## Todo
 - [x] Correct testing 
 - [ ] Mention every 3rd party package here
