@@ -14,9 +14,6 @@ class FireController extends Controller
 
     public function actionCommit()
     {
-//        echo "\n";
-//        echo __DIR__;
-//        echo "\n";
         echo shell_exec('php vendor/bin/php-commitizen commit "'.__DIR__.'/../config/commitizen.php"');
     }
 }
