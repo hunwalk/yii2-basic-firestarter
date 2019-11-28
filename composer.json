@@ -27,7 +27,8 @@
         "codeception/specify": "~0.4.6",
         "symfony/browser-kit": ">=2.7 <=4.2.4",
         "symfony/dotenv": "^4.2",
-        "damianopetrungaro/php-commitizen": "^0.1.2"
+        "damianopetrungaro/php-commitizen": "^0.1.2",
+        "symfony/var-dumper": "^5.0"
     },
     "config": {
         "process-timeout": 1800,
