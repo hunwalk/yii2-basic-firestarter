@@ -25,12 +25,17 @@ $config = [
         'rbac' => 'dektrium\rbac\RbacWebModule',
         'api' => [
             'class' => 'app\modules\api\Module',
+            'modules' => [
+                'v1' => [
+                    'class' => 'app\modules\api\modules\v1\Module',
+                ],
+            ],
         ],
     ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => '73-yqb4ndKWlSh46wIUIuqv82LaImf3P',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
