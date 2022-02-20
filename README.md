@@ -6,6 +6,10 @@
     <br>
 </p>
 
+### This project is discontinued
+Please follow this link if you want something similar to this project:
+https://github.com/hunwalk/yii2-app-forge
+
 This is a somewhat modified version of the basic template with some pregonfigured features.
 I've created this to save time upon creating a new project.
 
